@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.article-grey {
+    background: #5D6D7E;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-grey ul{
+    width: 100%;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.article-grey h2{
+    background: #AEB6BF;
+    padding: 20px;
+    border-radius: 400px;
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-title {
+    max-width: 20%;
+    text-align: center;
+    border-radius: 40px;
+    background: #5D6D7E;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1600px;
+    background: #17202A;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    left: 0%;
+    top: 0%;
+    padding-top: 10px;
+    height: 40px;
+    background: #17202A;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav {
+    max-width: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.main-nav a:hover{
+    color: rgb(0, 255, 225);
+    transition: 2s;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+}
+
+.nav-items li:not(:first-child) {
+    padding-left: 20px;
+}
+
+.header{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.header-text p{
+    font-weight: 400;
+    font-size: 18px ;
+    line-height: 1.4;
+}
+
+.header-logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.my-photo {
+    max-width: 100%;
+    border-radius: 100%;
+    margin-top: 5%;
+}
+
+.about-us {
+    max-width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.about-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.about-title {
+    width: 100%;
+}
+
+.about-title ul {
+   padding-top: 20px;
+}
+
+.about-title ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+
+.about-title:not(:last-child) {
+    margin-right: 50px;
+}
+
+.work { 
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-text {
+    width: 48%;
+}
+.work-map {
+    width: 48%;
+}
+
+.iframe {
+    width: 100%;
+}
+
+.footer {
+    max-width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 40px;
+}
+
+.contact-mail, .contact-number {
+    width: 48%;
+}
+
+.contact-mail p, .contact-number p {
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 639px;
+    }
+    .header {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-row {
+        flex-direction: column;
+    }
+
+    .about-title {
+        margin-bottom: 20px;
+    }
+
+    .section-title { 
+        max-width: 100%;
+    }
+    .article-grey h2 {
+        width: 100%;
+    }
+
+    .work {
+        flex-direction: column;
+    }
+
+    .work-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contacts-row {
+        flex-direction: column;
+    }
+
+    .contact-mail, .contact-number {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
