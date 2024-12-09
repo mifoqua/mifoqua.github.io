@@ -119,7 +119,9 @@ nav {
 
 .my-photo {
     max-width: 100%;
-    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20%;
     margin-top: 5%;
 }
 
